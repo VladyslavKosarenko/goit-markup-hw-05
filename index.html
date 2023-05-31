@@ -29,7 +29,9 @@
           >
           <ul class="header-list list">
             <li class="header-item">
-              <a class="header-item-link link" href="./index.html">Studio</a>
+              <a class="header-item-link link current" href="./index.html"
+                >Studio</a
+              >
             </li>
             <li class="header-item">
               <a class="header-item-link link" href="./portfolio.html">
@@ -66,7 +68,9 @@
       <section class="hero hero-bg">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="button" type="button">Order Service</button>
+          <button class="button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- blok2-quality -->
@@ -446,5 +450,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-modal-btn" type="button" data-modal-close>
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
